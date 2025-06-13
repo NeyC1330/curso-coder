@@ -1,0 +1,7 @@
+// scss/_base.scss
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+body {
+  font-family: $font-cormorant;
+  background-color: $color-light-gray;
+}

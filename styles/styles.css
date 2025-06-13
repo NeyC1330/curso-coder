@@ -1,63 +1,52 @@
-<!-- styles.css -->
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
 body {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   background-color: #f9f9f9;
-}
-
-nav a {
-  font-size: 1.5em;
-  color: #F9B233 !important;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 header {
   background-color: #5c5c3d;
 }
 
+nav a {
+  font-size: 1.5em;
+  color: #F9B233 !important;
+}
+nav a:hover {
+  text-decoration: underline;
+}
 
 .banner-section {
-  background-image: url('../images/fotoMainColmenares.png'); 
+  background-image: url("../images/fotoMainColmenares.png");
   background-size: cover;
   background-position: center;
   height: 700px;
   max-height: 650px;
-  color: white;   display: flex;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
 }
-
 .banner-section h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
-
 .banner-section p {
   font-size: 1.25rem;
-color: #F9B233;
+  color: #F9B233;
 }
 
------------------
 .banner-section {
-  background-image: url('../images/fotoMainColmenares.png');
-  background-size: cover;
-  background-position: center;
-  height: 700px;
   width: 100%;
   position: relative;
 }
-
 .banner-section h1 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   color: white;
   font-size: 2.5em;
-  background-color: rgba(249, 158, 71, 0.5); 
+  background-color: rgba(249, 178, 51, 0.5);
   padding: 0.5em 1em;
   border-radius: 8px;
 }
@@ -68,17 +57,14 @@ color: #F9B233;
   align-items: center;
   gap: 2rem;
 }
-
-.story-image img {
+.story-grid .story-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
-.story-text {
+.story-grid .story-text {
   text-align: left;
 }
-
 
 .spirits-grid {
   display: flex;
@@ -86,39 +72,29 @@ color: #F9B233;
   justify-content: center;
   gap: 2rem;
 }
-
-.spirit-card {
+.spirits-grid .spirit-card {
   flex: 1 1 300px;
   max-width: 300px;
   text-align: center;
 }
-
-.spirit-card img {
+.spirits-grid .spirit-card img {
   width: 100%;
   height: 300px;
   border-radius: 8px;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
-
-.spirit-card h3 {
+.spirits-grid .spirit-card img:hover {
+  transform: scale(1.05);
+}
+.spirits-grid .spirit-card h3 {
   margin-top: 0.5rem;
   font-size: 1.25rem;
 }
-
-.spirit-card p {
+.spirits-grid .spirit-card p {
   font-size: 0.95rem;
   color: #333;
 }
-
-.spirit-card img {
-  transition: transform 0.3s ease;
-}
-
-.spirit-card img:hover {
-  transform: scale(1.05);
-}
-
-
 
 .event-flex-section {
   display: flex;
@@ -127,18 +103,15 @@ color: #F9B233;
   padding: 1rem;
   align-items: center;
 }
-
-.event-image img {
+.event-flex-section .event-image img {
   width: 100%;
   max-width: 500px;
   border-radius: 8px;
 }
-
-.event-text {
+.event-flex-section .event-text {
   max-width: 600px;
   text-align: center;
 }
-
 
 .recipes-flex-container {
   display: flex;
@@ -146,8 +119,7 @@ color: #F9B233;
   justify-content: space-between;
   gap: 1.5rem;
 }
-
-.recipe-card {
+.recipes-flex-container .recipe-card {
   flex: 1 1 calc(33.333% - 1rem);
   background-color: #f9f9f9;
   padding: 1rem;
@@ -155,67 +127,47 @@ color: #F9B233;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-
-.recipe-img {
+.recipes-flex-container .recipe-card .recipe-img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-
-.recipe-img:hover {
+.recipes-flex-container .recipe-card .recipe-img:hover {
   transform: scale(1.05);
 }
 
-----------------------------------------------------------------
-
 @media (max-width: 768px) {
- 
- .banner-section {
+  .banner-section {
     padding: 2rem;
     text-align: left;
   }
-
   .banner-section h1 {
     font-size: 3rem;
   }
-
   .banner-section p {
     font-size: 1.25rem;
     max-width: 600px;
   }
-}
-
- .story-grid {
+  .story-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .story-text {
+  .story-grid .story-text {
     text-align: center;
   }
-
-.event-flex-section {
+  .event-flex-section {
     flex-direction: row;
     justify-content: center;
     text-align: left;
   }
-
-  .event-text {
+  .event-flex-section .event-text {
     text-align: left;
     padding-left: 1rem;
-  }
-
-  
-  .event-text {
     flex: 1;
   }
-
-  .event-image img {
+  .event-flex-section .event-image img {
     width: 100%;
     height: auto;
   }
-
-
-
 }

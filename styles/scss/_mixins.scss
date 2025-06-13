@@ -1,0 +1,14 @@
+// scss/_mixins.scss
+@mixin banner-background($image-url) {
+  background-image: url($image-url);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin hover-scale($scale-factor: 1.05) {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale($scale-factor);
+  }
+}

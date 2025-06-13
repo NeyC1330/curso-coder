@@ -1,0 +1,11 @@
+%section-spacing {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+%hover-grow {
+  transition: transform $transition-time ease;
+  &:hover {
+    transform: scale($hover-scale);
+  }
+}

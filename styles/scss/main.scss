@@ -1,0 +1,16 @@
+// scss/main.scss
+// Importar variables y mixins primero para que estén disponibles
+@use 'variables';
+@use 'mixins';
+
+// Importar estilos base
+@use 'base';
+
+// Importar estilos de layout
+@use 'layout';
+
+// Importar estilos de componentes
+@use 'components';
+
+// Importar estilos responsivos al final, para que puedan sobrescribir los anteriores
+@use 'responsive';

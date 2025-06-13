@@ -1,0 +1,61 @@
+// scss/_layout.scss
+header {
+  background-color: $color-dark-green;
+}
+
+nav {
+  a {
+    font-size: 1.5em;
+    color: $color-primary !important; // Considera si !important es realmente necesario
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner-section {
+  @include banner-background('../images/fotoMainColmenares.png');
+  height: 700px;
+  max-height: 650px; // Del primer bloque
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%; // Del segundo bloque
+  position: relative; // Del segundo bloque
+
+  h1 {
+    font-size: 2.5rem; // Del primer bloque
+    font-weight: bold; // Del primer bloque
+    font-family: $font-cormorant; // Del segundo bloque
+    color: $color-white; // Del segundo bloque
+    background-color: rgba($color-primary, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $color-primary;
+  }
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+
+  .story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .story-text {
+    text-align: left;
+  }
+}
