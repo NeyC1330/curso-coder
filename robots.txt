@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neyc1330.github.io/curso-coder/sitemap.xml
